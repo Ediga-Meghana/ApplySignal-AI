@@ -1,0 +1,6 @@
+[functions.ai]
+verify_jwt = true
+
+[functions.send-reminders]
+# The function validates REMINDER_CRON_SECRET itself; cron calls use a non-JWT secret.
+verify_jwt = false
